@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProcGeo : MonoBehaviour {
+public class QuadGenerator : MonoBehaviour {
 
     private void Awake () {
         Mesh mesh = new Mesh ();
