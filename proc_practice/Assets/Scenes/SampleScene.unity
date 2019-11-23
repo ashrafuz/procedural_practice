@@ -418,6 +418,7 @@ MonoBehaviour:
   m_RadiusInner: 1.04
   m_Thickness: 0.45
   m_AngularSegments: 9
+  uvProjection: 0
 --- !u!23 &1044775016
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -435,7 +436,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1e999b0669eea1245bf6ce5529f69b68, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
