@@ -10,9 +10,7 @@ public static class MyGizmos {
             float t = i / (float) _detail;
             float angleInRad = t * Maths.TAU;
 
-            Vector2 point2d = Maths.GetUnitVectorByAngle (angleInRad);
-            point2d *= _radius;
-
+            Vector2 point2d = Maths.GetUnitVectorByAngle (angleInRad) * _radius;
             points[i] = _pos + _rot * point2d; //vector transformation
         }
 
