@@ -50,14 +50,14 @@
             float4 frag (v2f i) : SV_Target
             {
 
-                ///return float4(i.uv.yyy, 1);
-                return float4(i.uv, 0 , 1);
-                //return float4(normalize(i.normal) , 1);
-                // // sample the texture
-                // fixed4 col = tex2D(_MainTex, i.uv);
-                // // apply fog
-                // UNITY_APPLY_FOG(i.fogCoord, col);
-                // return col;
+                // ///return float4(i.uv.yyy, 1);
+                // return float4(i.uv, 0 , 1);
+                // //return float4(normalize(i.normal) , 1);
+                // sample the texture
+                fixed4 col = tex2D(_MainTex, i.uv);
+                // apply fog
+                UNITY_APPLY_FOG(i.fogCoord, col);
+                return col;
             }
             ENDCG
         }
